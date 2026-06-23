@@ -11,7 +11,7 @@ export default defineConfig({
     //   include: ['src/**/*.js', 'src/**/*.vue', 'src/*.js', 'src/*.vue']
     // })
   ],
-  base: process.env.NODE_ENV === 'production' ? '/vite-template/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/vite-composition-template/' : '/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
