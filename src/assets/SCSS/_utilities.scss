@@ -1,0 +1,262 @@
+//按鈕
+.btn-custom{
+  background: #ab7e52;
+  color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  border-radius: 0;
+}
+.btn-custom:hover{
+  background: rgb(171, 126, 82, 0.8);
+  color: #fff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 1.5rem;
+  border-radius: 0;
+}
+.btn-outline-custom{
+  border: 1px solid #292524;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+}
+.btn-outline-custom:disabled {
+  border: 1px solid #292524;
+  color: #292524;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  opacity: 1;
+}
+.btn-outline-custom:hover{
+  background: #ab7e52;
+  border: 1px solid #292524;
+  color: #fff;
+}
+.btn-outline-n500{
+  border: 1px solid #292524;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+}
+.btn-outline-n500:hover{
+  background: #57534E;
+  border: 1px solid #292524;
+  color: #fff;
+}
+.btn-accent{
+  background-color: #BB0000;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  color: #fff;
+}
+.btn-accent:hover{
+  background-color: rgb(187, 0, 0, 0.8);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  color: #fff;
+}
+.btn-outline-accent{
+  border: 1px solid #BB0000;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0;
+  color: #BB0000;
+}
+.btn-outline-accent:hover{
+  background: #BB0000;
+  border: 1px solid #BB0000;
+  color: #fff;
+}
+.btn-outline-main{
+  background: #fff;
+  color: #ab7e52;
+  border: 1px solid #ab7e52;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0;
+}
+.btn-outline-main:hover{
+  background: #ab7e52;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0;
+}
+.logout{
+  color: #fff;
+}
+.logout:hover{
+  color: #AB7E52;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+//圖片
+.object-cover{
+  object-fit: cover;
+}
+//文字
+.Sans-TC{
+  font-family: 'Noto Sans Tc', sans-serif;
+}
+.Serif-TC{
+  font-family: 'Noto Serif Tc', Serif;
+}
+@media screen and (min-width: 576px) {
+  .writing-lr{
+    writing-mode: vertical-lr;
+  }
+}
+.writing-rl{
+  writing-mode: vertical-rl;
+}
+.letter-spacing{
+  letter-spacing: 0.5rem;
+}
+.fs-sm{
+  font-size: 0.5rem;
+}
+.multiline-ellipsis { 
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+//顏色
+.accent-color{
+  color: #BB0000;
+}
+.neutral-300{
+  color: #A8A29E
+}
+.neutral-500{
+  color: #57534E
+}
+.neutral-700{
+  color: #44403C
+}
+.neutral-900{
+  color: #292524
+}
+//background
+.bg-opacity-20{
+  background-color: rgb(255, 255, 255, 0.2);
+}
+.bg-opacity-80{
+  background-color: rgb(255, 255, 255, 0.8);
+}
+.bg-opacity-65{
+  background-color: rgb(51, 43, 33, 0.5);
+}
+.bg-all{
+  background-color: #FCFAF7;
+}
+.bg-sec{
+  background-color: #EDEAE6;
+}
+.bg-third{
+  background-color: #A8A29E;
+}
+.bg-n500{
+  background-color: #57534E;
+}
+.bg-footer{
+  background-color: #332B21;
+}
+.tel-use{
+  display: none;
+}
+.other-use{
+  display: block;
+}
+//home
+@media screen and (min-width: 992px) {
+  .appeal-img{
+    right: 7rem
+  }
+  .biechaer-img{
+    left: 7rem
+  }
+  .productsImg{
+    height: 250px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .appeal-top{
+    margin-top: 1.5rem;
+  }
+  .productsImg{
+    height: 200px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .tel-use{
+    display: block;
+  }
+  .other-use{
+    display: none;
+  }
+  .appeal-top{
+    margin-top: 0px;
+  }
+  .productsImg{
+    height: 250px;
+  }
+}
+//nav
+.topNegative{
+  top: -16px;
+}
+.endNegative{
+  display: none;
+}
+.endflex{
+  display: flex;
+}
+@media screen and (min-width: 992px) {
+  .writing-nav{
+    writing-mode: vertical-lr;
+  }
+  .desktopPx{
+    padding: 0 auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .topNegative{
+    display: none;
+  }
+  .endNegative{
+    display: block;
+  }
+  .endHeight{
+    height: 100vh;
+  }
+  .endflex{
+    display: block;
+  }
+  .hb{
+    padding: 1rem 0.5rem;
+    border-bottom: 1px solid #A8A29E;
+  }
+  .hb-navColor{
+    color: #292524;
+  }
+}
+//card
+.prodHover{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.prodHover:hover{
+  background: rgba(71, 63, 57, 0.15);
+  opacity: 1;
+  transition: all .3s ease-in-out;
+}
+.shadow-custom{
+  box-shadow: rgba(69, 35, 0, 0.12) 0px 0px 16px;  
+}
