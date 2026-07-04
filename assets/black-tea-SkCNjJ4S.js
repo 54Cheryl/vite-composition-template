@@ -1,0 +1,1 @@
+const t="/vite-composition-template/assets/red-tea-lj4ElAjX.svg",s="/vite-composition-template/assets/green-tea-5_DneLFj.svg",e="/vite-composition-template/assets/oolong-tea-B4idiIuJ.svg",o="/vite-composition-template/assets/black-tea-BXph3ENx.svg";export{t as _,s as a,e as b,o as c};
