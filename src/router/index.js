@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
@@ -94,7 +94,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(process.env.NODE_ENV === 'production' ? '/vite-composition-template/' : '/'),
   linkActiveClass: 'active',
   routes,
   scrollBehavior (to, from, savedPosition) {

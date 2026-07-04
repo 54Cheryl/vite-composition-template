@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-light navbar-expand-lg bg-white fixed-top py-2">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" :href="baseHref">
         <img src="/src/assets/img/logo.svg" alt="BIECHA-logo">
       </a>
       <button type="button" class="navbar-toggler btn border-0 rounded-0 position-relative" data-bs-toggle="collapse" data-bs-target="#navbarNav2" aria-controls="navbarNav2" aria-expanded="false" aria-label="Toggle navigation" @click="openHbSec">
@@ -97,6 +97,9 @@ import useCartStore from '@/stores/cartStore'
 import { ref, computed, onMounted } from 'vue'
 const cartStore = useCartStore()
 const hbOpen = ref(false)
+const baseHref = computed(() =>
+  import.meta.env.MODE === 'production' ? '/vite-composition-template/' : '/'
+)
 const cartNum = computed(() => cartStore.cartNum)
 const getCarts = () => {
   cartStore.getCarts()

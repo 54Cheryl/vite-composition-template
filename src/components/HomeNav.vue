@@ -7,7 +7,7 @@
     'navbar-dark': !isScrolled
     }">
     <div class="container">
-      <a class="navbar-brand pb-0" href="#">
+      <a class="navbar-brand pb-0" :href="baseHref">
         <img src="/src/assets/img/logo.svg" alt="BIECHA-logo">
       </a>
       <button type="button" class="navbar-toggler btn text-white border-0 rounded-0 position-relative" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" @click="openHb">
@@ -119,6 +119,9 @@ import useCartStore from '@/stores/cartStore'
 const cartStore = useCartStore()
 const isScrolled = ref(false)
 const isOpen = ref(false)
+const baseHref = computed(() =>
+  import.meta.env.MODE === 'production' ? '/vite-composition-template/' : '/'
+)
 const cartNum = computed(() => cartStore.cartNum)
 const handleScroll = () => {
   const ninety = (window.innerHeight) * 0.88
